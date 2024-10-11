@@ -1,0 +1,55 @@
+/* 背景样式 */
+
+/* 出现前 */
+.modal-bg-enter,
+.modal-bg-appear {
+  opacity: 0;
+}
+
+/* 出现时 */
+.modal-bg-enter-active,
+.modal-bg-appear-active {
+  opacity: 0.2;
+  transition: opacity 150ms ease-in-out;
+}
+
+/* 出现后、退出前 */
+.modal-bg-enter-done,
+.modal-bg-appear-done,
+.modal-bg-exit {
+  opacity: 0.2;
+}
+
+/* 退出时 */
+.modal-bg-exit-active {
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+/* 主体样式 */
+
+/* 出现前 */
+.modal-main-enter,
+.modal-main-appear {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+/* 出现时 */
+.modal-main-enter-active,
+.modal-main-appear-active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 150ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* 出现后、退出前 */
+.modal-main-enter-done,
+.modal-main-appear-done,
+.modal-main-exit {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* 退出时 */
+.modal-main-exit-active {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 150ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
